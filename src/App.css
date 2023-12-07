@@ -1,0 +1,22 @@
+body{
+  margin: 3rem;
+  background-color: rgb(246, 248, 250);
+}
+
+.logo {
+  height: 5rem;
+  border-radius: 1rem;
+}
+
+.header,
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul>li {
+  list-style-type: none;
+  margin-right: 3rem;
+  font-size: 2rem;
+}
