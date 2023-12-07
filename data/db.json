@@ -33,7 +33,7 @@
           "movie_name": "Inception",
           "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
           "year_released": 2010,
-          "best_rated": true
+          "best_rated": false
         }
     ]
 

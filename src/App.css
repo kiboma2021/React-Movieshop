@@ -30,3 +30,15 @@ ul>li {
 .main {
   min-height: 80vh;
 }
+
+.card {
+  margin: 2rem;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+
+}
+
+.best_rated {
+  color: red;
+}
