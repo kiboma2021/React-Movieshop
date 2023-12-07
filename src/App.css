@@ -20,3 +20,13 @@ ul>li {
   margin-right: 3rem;
   font-size: 2rem;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  min-height: 80vh;
+}
