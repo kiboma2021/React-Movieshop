@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 
 const Main = () => {
     const [movies, setMovies] = useState([]);
@@ -6,17 +6,18 @@ const Main = () => {
 
     console.log(movies);
 
-    const fetchMovies = async() => {
-      const response = await fetch(movie_url);
-      const data = await response.json();
-      setMovies(data);
-
-    };
+    const fetchMovies = useCallback( 
+      async() => {
+        const response = await fetch(movie_url);
+        const data = await response.json();
+        setMovies(data);
+  
+      },[movie_url])
     
     useEffect(() =>{
         fetchMovies();
 
-    },[movie_url])
+    },[fetchMovies])
 
 
   return (
