@@ -6,11 +6,15 @@ const Main = () => {
 
     console.log(movies);
 
+    const fetchMovies = async() => {
+      const response = await fetch(movie_url);
+      const data = await response.json();
+      setMovies(data);
+
+    };
     
     useEffect(() =>{
-        fetch(movie_url)
-        .then(response => response.json())
-        .then(data => setMovies(data))
+        fetchMovies();
 
     },[movie_url])
 
