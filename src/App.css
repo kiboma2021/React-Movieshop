@@ -42,3 +42,20 @@ ul>li {
 .best_rated {
   color: red;
 }
+
+.filter-btns {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.filter-btns > button {
+  background-color: blueviolet;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: larger;
+  color: white;
+}
